@@ -5,6 +5,8 @@
 
 This is a basic etch-a-sketch program written in python. It utilizes the curses argparse libraries. 
 
+The purpose of this excerise is to verify everything is all and well with out beagle bone board, the git repo, and to get some practice with python if we are rusty.
+
 ## Usage
 
 Run the game with `python3 etch-a-sketch.py`. The default board size is 8X8. You may supply your own size with a command of the form: `python3 etch-a-sketch.py -x 19 -y 19`.
