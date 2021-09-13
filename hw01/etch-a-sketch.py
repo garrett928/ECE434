@@ -17,7 +17,7 @@ def main(stdscr):
     # screen constants and vars
     global SCREEN_WIDTH,SCREEN_HEIGHT
     global SCREEN_X, SCREEN_Y
-    SCREEN_X = 3
+    SCREEN_X = 1
     SCREEN_Y = 1
     Y_SCALE = 1 # scale x and y to make board look better
     X_SCALE = 3
@@ -36,7 +36,7 @@ def main(stdscr):
 
     # print out etch-a-sketch board
     print_board(stdscr)
-    stdscr.addstr(SCREEN_Y, SCREEN_X, 'X')
+    stdscr.addstr(SCREEN_Y * Y_SCALE, SCREEN_X * X_SCALE, 'X')
 
     # main board loop
     while True:
@@ -83,7 +83,7 @@ def print_board(stdscr):
         # print out board y heading
         tmp = str(y) + ':'
         stdscr.addstr(y+1, 0, str(tmp))
-    SCREEN_X = 2
+    SCREEN_X = 1
     SCREEN_Y = 1
     stdscr.refresh()
     
